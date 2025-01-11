@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Generator - Inferno School District</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Check Generator</h1>
+    <p>Fill in the details below to generate a check.</p>
+
+    <form id="checkForm">
+      <label for="payee">Pay to the order of:</label>
+      <input type="text" id="payee" name="payee" required><br>
+
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" name="amount" required><br>
+
+      <label for="memo">Memo:</label>
+      <input type="text" id="memo" name="memo" required><br>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required><br>
+
+      <button type="submit">Generate Check</button>
+    </form>
+
+    <div id="checkPreview" class="check-preview">
+      <h2>Check Preview</h2>
+      <div id="checkOutput"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
